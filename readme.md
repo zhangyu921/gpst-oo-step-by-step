@@ -55,15 +55,23 @@ Student构造的时候把Class的一个实例传给Student，参见测试用例�
 
 ### 练习3
 
-在 **练习2** 的基础上增加需求：
+在 **练习2** 的基础上变动+增加以下需求：
 
-Class还有一个appendMember方法，接受一个Student实例。意味将一名学生加入该班级。 如果学生没有加入该班级，那么在调用assignLeader方法的时候，不会assign成功，会打印一句话：
+Class还有一个appendMember方法，接受一个Student实例。意味将一名学生加入该班级。
+
+如果学生加入该班级, 那么在调用assignLeader方法的时候, assign成功，会打印一句话：
+
+`Assign team leader successfully.`
+
+如果学生没有加入该班级，不会assign成功，会打印一句话：
 
 `It is not one of us.`
 
-相应的调用Student的introduce方法也只会返回旧的字符串。
+相应的调用Student的introduce方法也只会返回字符串(而学生是否在class中这件事情，应该是Class有一个方法hasStudent来判断。):
 
-Teacher还有一个isTeaching方法，传入一个学生，返回true/false。只要学生在classes中的任一个class中，就是在教他。 而学生是否在class中这件事情，应该是Class有一个方法isIn来判断。
+`My name is Tom. I am 21 years old. I am a Student. I haven't been allowed to join Class.`
+
+Teacher还有一个isTeaching方法，传入一个学生，返回true/false。只要学生在classes中的任一个class中，就是在教他。 而学生是否在class中这件事情，应该是Class有一个方法hasStudent来判断。
 
 当学生加入Teacher教的班级的时候，Teacher会打印一个句话,形如：
 
@@ -80,7 +88,7 @@ Teacher还有一个isTeaching方法，传入一个学生，返回true/false。�
 3. [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
 4. [npm 下载安装](https://github.com/npm/npm)
 5. [node 下载安装](https://github.com/creationix/nvm)
-6. [jasmine用法](http://jasmine.github.io/2.4/introduction.html)
+6. [jasmine用法](http://jasmine.github.io/2.6/introduction.html)
 7. [Git 参考手册](http://gitref.org/zh/index.html)
 
 
