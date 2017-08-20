@@ -23,7 +23,7 @@ describe("Person", () => {
       let student = new Student("Tom", 21, 2);
       expect(student.name).toBe("Tom");
       expect(student.age).toBe(21);
-      expect(student.klass).toBe(2);
+      expect(student.clazz).toBe(2);
 
     });
 
